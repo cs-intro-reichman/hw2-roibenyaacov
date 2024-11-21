@@ -5,7 +5,7 @@ public class CalcPi {
 		double denominator = 3;
 		double fraction = 0;
 		double pi = 0;
-		for (int i = 0; i < N-1; i++) {
+		for (int i = 0; i < N; i++) {
 			if (i % 2 == 0) {
 				fraction = (1/denominator);
 				pi -= fraction;
