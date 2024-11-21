@@ -4,8 +4,8 @@ public class CalcPi {
 		int N = Integer.parseInt(args[0]);
 		double denominator = 3;
 		double fraction = 0;
-		double pi = 0;
-		for (int i = 0; i < N; i++) {
+		double pi = 1;
+		for (int i = 0; i < N-1; i++) {
 			if (i % 2 == 0) {
 				fraction = (1/denominator);
 				pi -= fraction;
@@ -16,7 +16,7 @@ public class CalcPi {
 			}
 			denominator += 2;
 		}
-		pi = (1.0 + pi)*4.0;
+		pi =  pi*4.0;
 
 	System.out.println("pi according to Java: " + Math.PI);
 	System.out.println("pi, approximated:     " + pi );
